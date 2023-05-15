@@ -118,7 +118,7 @@ layout = [[sg.Text("Sort by:                                              Sort f
           [sg.Text("Priority 2:", key="text2"), sg.Combo(values=["None", "#", "HP", "Attack", "Defense", "Special Attack", "Special Defense", "Speed", "Generation"], default_value="None", readonly=True, enable_events=True, key="combo2"), sg.Combo(["High to Low", "Low to High"], default_value="High to Low", readonly=True, enable_events=True ,key="sortDirection2")], 
           [sg.Table(values=data, headings=header, auto_size_columns=True, display_row_numbers=False, justification='center', key='table', selected_row_colors='red on yellow', enable_events=True, expand_x=True, expand_y=True)]]
 
-window = sg.Window("Table Demo", layout, size=(1200, 500), resizable=True)
+window = sg.Window("Pokemon", layout, size=(1200, 500), resizable=True)
 
 while True: #Loop for detecting ui events
     event, values = window.read()
